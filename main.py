@@ -4,6 +4,7 @@ import random
 import torch
 from graph_datasets import load_data
 
+from models import AGGR_batch
 from models.AGGR import AGGR
 from utils import check_modelfile_exists
 from utils import csv2file
@@ -138,7 +139,7 @@ if __name__ == '__main__':
     dump = True
     device = set_device(str(args.gpu_id))
     if dataset_name == "Reddit":
-        pass
+        aggr = AGGR_batch
     else:
         aggr = AGGR
     final_params["lr"] = args.lr
