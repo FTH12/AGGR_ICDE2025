@@ -1,0 +1,2 @@
+lr,pre_epochs,epochs,sim,quilty,add_ratio,del_ratio,dataset,run_id,seed,qARI,qNMI,qACC
+0.001,150,150,dot,homo,0.02,0.01,Citeseer,0,698626,0.5070462584777874,0.4856324567129967,0.7345957318905921
